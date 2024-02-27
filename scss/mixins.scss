@@ -1,0 +1,24 @@
+@mixin boxshadow(){
+    box-shadow: 11px 15px 23px 3px rgba(0,0,0,0.22) inset;
+-webkit-box-shadow: 11px 15px 23px 3px rgba(0,0,0,0.22) inset;
+-moz-box-shadow: 11px 15px 23px 3px rgba(0,0,0,0.22) inset;
+}
+@mixin para(){
+             line-height: 30px;
+            color: rgb(33, 37, 41);
+            padding: 0 20px;
+            // border: 1px solid goldenrod;
+}
+
+//   carousel  
+@mixin animation-delay($delay: 20) {
+    $t: 0;
+    $i: -$delay;
+    @while $i <= $delay/2 {
+      &:nth-child(#{$t}) {
+        animation-delay: $i+s;
+      }
+      $t: $t + 1;
+      $i: $i + $delay/4;
+    }
+  }

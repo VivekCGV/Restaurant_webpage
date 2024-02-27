@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bg_color;
+    position: relative;
+    font-family: $poppins;
+}
+.section_container{
+    max-width: 1200px ;
+    margin: auto;
+    // border: 1px solid black;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    -webkit-tap-highlight-color: transparent;
+    
+}
+ul{
+    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff8243;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f16620;
+}
+// .logo_div img{
+//     border: 1px solid red;
+// }
+@import "main";
+@import "responsive";
